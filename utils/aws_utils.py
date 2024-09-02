@@ -42,3 +42,5 @@ def upload_folder_to_s3(folder_path, bucket, s3_prefix=""):
                 return
             print(f"Upload of {local_file_path} to {bucket}/{s3_file_key} complete.")
     
+    # remove the raw video file and output directory
+    os.system(f'rm -rf media/*')

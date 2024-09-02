@@ -36,6 +36,10 @@ def download_s3_file(
         s3_prefix=f'videos/{file_uuid}/',
         folder_path=f'./media/{file_uuid}/transcoded-{file_uuid}/',
     )
+    
+    # remove the raw video file and output directory
+
+    
     return {
         "message": "File downloaded successfully, transcoding in progress...",
     }
