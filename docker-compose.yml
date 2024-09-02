@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  transcoder_app:
+    build:
+      context: ./transcoder_app # Build context for the FastAPI service
+    container_name: transcoder_app
+    command: uvicorn app:app --reload --host 0.0.0.0 --port 8000
+    restart: always
+
+    ports:
+      - "8000:8000"
