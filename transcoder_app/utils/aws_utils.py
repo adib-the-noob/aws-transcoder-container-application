@@ -19,8 +19,6 @@ from botocore.exceptions import NoCredentialsError, ClientError
 
 def upload_folder_to_s3(folder_path, bucket, s3_prefix=""):
     """
-    Upload a folder and its contents to an S3 bucket.
-    
     :param folder_path: Path to the local folder
     :param bucket: S3 bucket name
     :param s3_prefix: Prefix in the S3 bucket (optional)
