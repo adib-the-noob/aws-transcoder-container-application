@@ -1,5 +1,5 @@
 # Use an official Ubuntu runtime as a parent image
-FROM ubuntu:latest
+FROM python:3.12-slim
 
 # Set the working directory in the container
 WORKDIR /app
